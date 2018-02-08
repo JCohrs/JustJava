@@ -60,19 +60,19 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/price"
+        android:id="@+id/order_summary_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/price"
+        android:text="@string/order_summary"
         android:textAllCaps="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
-        android:id="@+id/price_text_view"
+        android:id="@+id/order_summary_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -82,7 +82,7 @@
         android:textColor="@android:color/black"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price" />
+        app:layout_constraintTop_toBottomOf="@+id/order_summary_header" />
 
     <Button
         android:id="@+id/button"
@@ -95,6 +95,6 @@
         android:text="@string/order_btn"
         android:textAllCaps="true"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price_text_view" />
+        app:layout_constraintTop_toBottomOf="@+id/order_summary_text_view" />
 
 </android.support.constraint.ConstraintLayout>
