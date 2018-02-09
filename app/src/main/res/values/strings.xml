@@ -7,4 +7,7 @@
     <string name="order_summary">order summary</string>
     <string name="increment">+</string>
     <string name="decrement">-</string>
+    <string name="toppings">toppings</string>
+    <string name="whipped_cream">Whipped cream</string>
+    <string name="chocolate">Chocolate</string>
 </resources>
