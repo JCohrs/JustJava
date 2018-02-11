@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import butterknife.BindView;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     CheckBox whippedCheckBox;
     @BindView(R.id.chocolate_checkbox)
     CheckBox chocolateCheckBox;
+    @BindView(R.id.editTextName)
+    EditText editTxtName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +46,8 @@ public class MainActivity extends AppCompatActivity {
         int total = calculatePrice();
         boolean hasWhippedCream = whippedCheckBox.isChecked();
         boolean hasChocolate = chocolateCheckBox.isChecked();
-        String priceMessage = createOrderSummary(total, hasWhippedCream, hasChocolate);
+        String custName = editTxtName.getText().toString();
+        String priceMessage = createOrderSummary(custName, total, hasWhippedCream, hasChocolate);
         displayMessage(priceMessage);
     }
 
@@ -93,8 +97,8 @@ public class MainActivity extends AppCompatActivity {
      * @param addChocolate    whether the user wants chocolate or not
      * @return order summary message
      */
-    private String createOrderSummary(int orderTotal, boolean addWhippedCream, boolean addChocolate) {
-        String priceMessage = "Name: Kaptain Kunal";
+    private String createOrderSummary(String custName, int orderTotal, boolean addWhippedCream, boolean addChocolate) {
+        String priceMessage = "Name: " + custName;
         priceMessage += "\nAdded whipped cream? " + addWhippedCream;
         priceMessage += "\nAdded chocolate? " + addChocolate;
         priceMessage += "\nQuantity: " + quantity;

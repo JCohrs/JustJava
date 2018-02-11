@@ -10,4 +10,5 @@
     <string name="toppings">toppings</string>
     <string name="whipped_cream">Whipped cream</string>
     <string name="chocolate">Chocolate</string>
+    <string name="namePlaceholder">Name</string>
 </resources>
