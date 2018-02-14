@@ -3,12 +3,19 @@
     <string name="quantity">quantity</string>
     <string name="quantity_value">2</string>
     <string name="order_btn">order</string>
-    <string name="price_value">$10</string>
-    <string name="order_summary">order summary</string>
-    <string name="increment">+</string>
-    <string name="decrement">-</string>
     <string name="toppings">toppings</string>
     <string name="whipped_cream">Whipped cream</string>
     <string name="chocolate">Chocolate</string>
     <string name="namePlaceholder">Name</string>
+    <string name="thank_you">Thank you!</string>
+    <string name="total_amount">Total: $</string>
+    <string name="order_quantity">Quantity: </string>
+    <string name="added_chocolate">Added chocolate? </string>
+    <string name="added_whipped_cream">Added whipped cream? </string>
+    <string name="order_name">Name: </string>
+    <string name="email_subject">JustJava order for </string>
+    <string name="min_coffee">Cannot go below 1 coffee</string>
+    <string name="max_coffee">Cannot go above 100 coffees</string>
+    <string name="hyphen">-</string>
+    <string name="plus">+</string>
 </resources>
